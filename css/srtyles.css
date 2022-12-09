@@ -14,11 +14,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 body {
     font-size: 1.5rem;
     font-family: var(--principal-font);
@@ -30,26 +25,102 @@ main {
     align-items: center;
     justify-content: center;
 }
+img { max-width: 100%; }
+h1, h2, h3 {
+    margin: 0;
+}
 
 /* CARD */
 .card {
-    max-width: 70rem;
+    max-width: 75rem;
     display: flex;
-    max-height: 22rem;
+    height: 26.4rem;
 }
-
 
 /* IMAGE */
 .image {
     background-image: url(../images/drawers.jpg);
-    width: 30rem;
+    width: 33rem;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 /* CONTENT */
 .content {
-    max-width: 47rem;
+    max-width: 48rem;
     background-color: white;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
+.content h1 {
+    font-size: 2.2rem;
+    color: var(--v-d-grayishBlue);
+    line-height: 1.3;
+}
+.content p {
+    line-height: 1.4;
+}
+
+/* CONTENT-MEDIA */
+.content-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* USER INFO */
+.user-info {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* MEDIA IMAGE */
+.media-image {
+    background-image: url(../images/avatar-michelle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+
+/* MEDIA INFO */
+.media-info h2, .media-info h3{
+    font-size: 1.5rem;
+}
+.media-info h2 {
+    color: var(--v-d-grayishBlue);
+    font-weight: bold;
+}
+.media-info h3, .content-text p {
+    color: var(--grayishBlue);
+    font-weight: 500;
+}
+.media-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+/* SHARE */
+.share {
+    cursor: pointer;
+    background-color: var(--l-grayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+/* .share img {
+    background-image: url(../images/icon-share.svg);
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 1rem;
+} */
