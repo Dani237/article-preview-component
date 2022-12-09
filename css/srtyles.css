@@ -118,9 +118,24 @@ h1, h2, h3 {
     height: 3rem;
     border-radius: 50%;
 }
-/* .share img {
-    background-image: url(../images/icon-share.svg);
-    background-repeat: no-repeat;
-    width: 2rem;
-    height: 1rem;
-} */
+
+@media (max-width: 375px) {
+    
+    .card {
+        flex-direction: column;
+        height: 100%;
+        max-width: 90vw;
+        margin-top: 15rem;
+    }
+    .image {
+        height: 20rem;
+        width: 100%;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+    }
+    .content {
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+    }
+}
+
